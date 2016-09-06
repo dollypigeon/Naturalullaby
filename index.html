@@ -85,8 +85,10 @@ ul#languagebar li.current{
     font-family:fantasy;
     font-size:20px;
   }
+
+
   #footer {
-    color:white;
+    color:#E6E6E6;
   	position:absolute;
   	bottom:0;
   	width:100%;
@@ -95,7 +97,7 @@ ul#languagebar li.current{
   </style>
 
   <body id="body">
-    <script>
+    <script id="fb">
       window.fbAsyncInit = function() {
         FB.init({
           appId      : '1268719459825443',
@@ -112,6 +114,7 @@ ul#languagebar li.current{
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
     </script>
+
     <h1 id="head">Naturalullaby</h1>
     <p id="main">Have you ever wished to be at the beach but stuck in city?<br>
       Have you ever wanted to be engulfed in nature but never found the time?<br>
@@ -178,14 +181,12 @@ ul#languagebar li.current{
       <li><a href="subfolder/Chinese.html" onclick="getprev()">中文&nbsp</a></li>
     </ul>
 
-
-
-
       <div
         class="fb-like"
         data-share="true"
         data-width="450"
-        data-show-faces="false">
+        data-show-faces="false"
+        data-layout="button">
       </div>
 
     <div id="footer">
