@@ -94,6 +94,13 @@ ul#languagebar li.current{
   }
   </style>
   <body id="body">
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     <h1 id="head">Naturalullaby</h1>
     <p id="main">Have you ever wished to be at the beach but stuck in city?<br>
       Have you ever wanted to be engulfed in nature but never found the time?<br>
@@ -160,13 +167,6 @@ ul#languagebar li.current{
 
 
     <div id="fb-root"></div>
-    	<script>(function(d, s, id) {
-    	  var js, fjs = d.getElementsByTagName(s)[0];
-    	  if (d.getElementById(id)) return;
-    	  js = d.createElement(s); js.id = id;
-    	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
-    	  fjs.parentNode.insertBefore(js, fjs);
-    	}(document, 'script', 'facebook-jssdk'));</script>
 
     	<!-- Your share button code -->
     	<div class="fb-share-button"
