@@ -2,10 +2,10 @@
 <html>
   <head><title>Naturalullaby</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
-    <meta property="og:url"           content="Listen to the world.html" />
+    <meta property="og:url"           content="index.html" />
     <meta property="og:type"          content="website" />
     <meta property="og:title"         content="Naturalullaby" />
-    <meta property="og:description"   content="Provide a unique acoustic tourfor people who like the sounds of nature." />
+    <meta property="og:description"   content="Provide a unique acoustic tour for people who like the sounds of nature." />
   </head>
 
   <style>
@@ -32,7 +32,11 @@ ul#languagebar li a {
 ul#languagebar li.current{
     font-weight: bold;
 }
-
+#fb{
+  position:absolute;
+  right:0;
+  top:10%;
+}
   #head{
     text-align:center;
     font-size:80px;
@@ -47,11 +51,11 @@ ul#languagebar li.current{
     font-family:serif;
     color:white;
     font-weight: bold;
-    line-height: 27px;
+    line-height: 30px;
   }
 
   #body{
-    background:url("picture/bg3.jpeg") no-repeat center fixed;
+    background:url("picture/bg3.jpg") no-repeat center fixed;
     -webkit-background-size:cover;
     background-size: cover;
     background-color: black;
@@ -67,7 +71,7 @@ ul#languagebar li.current{
     left:30.5%;
     top:68.5%;
     font-weight: bold;
-    font-family:fantasy;
+    font-family:sans-serif;
     font-size:20px;
   }
 
@@ -79,10 +83,10 @@ ul#languagebar li.current{
   #rainy{
     color:white;
     position:absolute;
-    left:56%;
+    left:55%;
     top:68.5%;
     font-weight: bold;
-    font-family:fantasy;
+    font-family:sans-serif;
     font-size:20px;
   }
 
@@ -93,6 +97,8 @@ ul#languagebar li.current{
   	bottom:0;
   	width:100%;
     text-align:center;
+    font-family:sans-serif;
+    font-weight:bold;
   }
   </style>
 
@@ -159,7 +165,7 @@ ul#languagebar li.current{
     var aud2 = document.getElementById("rainfall");
     var img2 = document.getElementById("playpause2");
     img2.onclick = function() {
-      document.body.style.backgroundImage="url('picture/bg3.jpeg')";
+      document.body.style.backgroundImage="url('picture/bg3.jpg')";
     if (aud2.paused) {
         aud2.play();
     } else {

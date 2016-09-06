@@ -37,13 +37,14 @@ ul#languagebar li.current{
   #main{
     text-align:center;
     font-size:20px;
-    font-family:cursive;
+    font-family:serif;
+    font-weight:bold;
     color:white;
-
+    line-height:30px;
   }
 
   #body{
-    background:url("../picture/bg3.jpeg") no-repeat center center fixed;
+    background:url("../picture/bg3.jpg") no-repeat center center fixed;
     -webkit-background-size:cover;
     background-size: cover;
   }
@@ -129,7 +130,7 @@ ul#languagebar li.current{
     var aud2 = document.getElementById("rainfall");
     var img2 = document.getElementById("playpause2");
     img2.onclick = function() {
-      document.body.style.backgroundImage="url('../picture/bg3.jpeg')";
+      document.body.style.backgroundImage="url('../picture/bg3.jpg')";
     if (aud2.paused) {
         aud2.play();
     } else {
