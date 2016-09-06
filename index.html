@@ -51,7 +51,7 @@ ul#languagebar li.current{
   }
 
   #body{
-    background:url("picture/sea.jpg") no-repeat center fixed;
+    background:url("picture/bg3.jpeg") no-repeat center fixed;
     -webkit-background-size:cover;
     background-size: cover;
     background-color: black;
@@ -93,6 +93,7 @@ ul#languagebar li.current{
     text-align:center;
   }
   </style>
+
   <body id="body">
     <script>
       window.fbAsyncInit = function() {
@@ -127,6 +128,7 @@ ul#languagebar li.current{
     var aud = document.getElementById("seashore");
     var img = document.getElementById("playpause");
     img.onclick = function() {
+    document.body.style.backgroundImage="url('picture/sea.jpg')";
     if (aud.paused) {
         aud.play();
     } else {
@@ -154,6 +156,7 @@ ul#languagebar li.current{
     var aud2 = document.getElementById("rainfall");
     var img2 = document.getElementById("playpause2");
     img2.onclick = function() {
+      document.body.style.backgroundImage="url('picture/bg3.jpeg')";
     if (aud2.paused) {
         aud2.play();
     } else {
