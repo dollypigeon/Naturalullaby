@@ -5,6 +5,11 @@
   </head>
 
   <style>
+    #fb{
+  position:absolute;
+  right:0.5%;
+  top:5%;
+}
   ul#languagebar{
     color:white;
     position:absolute;
@@ -86,6 +91,23 @@ ul#languagebar li.current{
 
   </style>
   <body id="body">
+        <script>
+	      window.fbAsyncInit = function() {
+	        FB.init({
+	          appId      : '1268719459825443',
+	          xfbml      : true,
+	          version    : 'v2.7'
+	        });
+	      };
+	
+	      (function(d, s, id){
+	         var js, fjs = d.getElementsByTagName(s)[0];
+	         if (d.getElementById(id)) {return;}
+	         js = d.createElement(s); js.id = id;
+	         js.src = "//connect.facebook.net/en_US/sdk.js";
+	         fjs.parentNode.insertBefore(js, fjs);
+	       }(document, 'script', 'facebook-jssdk'));
+	    </script>
     <h1 id="head">听&#8226世界</h1>
     <p id="main">是否有时想去海边却身在都市?<br>
       是否有时想亲近自然却没有时间?<br>
@@ -153,7 +175,13 @@ ul#languagebar li.current{
       <li><a href="../index.html" onclick="getprev()">English |</a></li>
       <li class="current"><a href="Chinese.html" onclick="getprev()">中文&nbsp</a></li>
     </ul>
-
+    <div id="fb"
+	      class="fb-like"
+	      data-share="true"
+	      data-width="450"
+	      data-show-faces="false"
+	      data-layout="button">
+	    </div>
 
   </body>
 </html>
